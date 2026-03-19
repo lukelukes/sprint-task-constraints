@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/task_constraint/__init__.py
+src/task_constraint/cli.py
+src/task_constraint/model.py
+src/task_constraint/solver.py
+src/task_constraint.egg-info/PKG-INFO
+src/task_constraint.egg-info/SOURCES.txt
+src/task_constraint.egg-info/dependency_links.txt
+src/task_constraint.egg-info/entry_points.txt
+src/task_constraint.egg-info/requires.txt
+src/task_constraint.egg-info/top_level.txt

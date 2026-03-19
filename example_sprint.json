@@ -1,0 +1,86 @@
+{
+  "sprint_name": "Sprint 24",
+  "sprint_days": 10,
+  "engineers": [
+    {
+      "id": "alice",
+      "name": "Alice",
+      "seniority": "senior",
+      "capacity_days": 10,
+      "skills": ["backend", "infra"],
+      "spillover_epics": ["epic-1"]
+    },
+    {
+      "id": "bob",
+      "name": "Bob",
+      "seniority": "senior",
+      "capacity_days": 8,
+      "skills": ["backend", "frontend"]
+    },
+    {
+      "id": "carol",
+      "name": "Carol",
+      "seniority": "mid",
+      "capacity_days": 10,
+      "skills": ["frontend", "design"]
+    },
+    {
+      "id": "dave",
+      "name": "Dave",
+      "seniority": "junior",
+      "capacity_days": 10,
+      "skills": ["backend", "frontend"]
+    }
+  ],
+  "epics": [
+    {
+      "id": "epic-1",
+      "name": "Auth Rewrite",
+      "priority": "p0",
+      "total_days": 14,
+      "completion_pct": 0.8,
+      "senior_required": true,
+      "required_skills": ["backend"],
+      "is_spillover": true
+    },
+    {
+      "id": "epic-2",
+      "name": "Search Indexing",
+      "priority": "p0",
+      "total_days": 10,
+      "required_engineers": 3,
+      "senior_required": true,
+      "required_skills": ["backend"]
+    },
+    {
+      "id": "epic-3",
+      "name": "Dashboard Redesign",
+      "priority": "p1",
+      "total_days": 8,
+      "required_engineers": 2,
+      "required_skills": ["frontend"]
+    },
+    {
+      "id": "epic-4",
+      "name": "API Rate Limiting",
+      "priority": "p1",
+      "total_days": 6,
+      "completion_pct": 0.5,
+      "required_skills": ["backend", "infra"]
+    },
+    {
+      "id": "epic-5",
+      "name": "Onboarding Flow",
+      "priority": "p2",
+      "total_days": 12,
+      "required_skills": ["frontend", "design"]
+    },
+    {
+      "id": "epic-6",
+      "name": "Dark Mode",
+      "priority": "p3",
+      "total_days": 4,
+      "required_skills": ["frontend"]
+    }
+  ]
+}

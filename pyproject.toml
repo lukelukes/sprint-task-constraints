@@ -1,0 +1,15 @@
+[project]
+name = "task-constraint"
+version = "0.1.0"
+description = "Sprint capacity allocation solver using constraint satisfaction"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ortools>=9.15.6755",
+]
+
+[project.scripts]
+task-constraint = "task_constraint.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

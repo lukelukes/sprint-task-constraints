@@ -1,0 +1,16 @@
+.DS_Store
+Thumbs.db
+
+.idea/
+.vscode/
+*.swp
+
+/dist/
+/build/
+/out/
+
+/vendor/
+/node_modules/
+
+**/__pycache__
+.venv

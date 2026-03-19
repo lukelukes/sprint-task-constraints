@@ -1,0 +1,7 @@
+Metadata-Version: 2.4
+Name: task-constraint
+Version: 0.1.0
+Summary: Sprint capacity allocation solver using constraint satisfaction
+Requires-Python: >=3.13
+Description-Content-Type: text/markdown
+Requires-Dist: ortools>=9.15.6755

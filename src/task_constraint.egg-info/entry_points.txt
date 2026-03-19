@@ -1,0 +1,2 @@
+[console_scripts]
+task-constraint = task_constraint.cli:main
