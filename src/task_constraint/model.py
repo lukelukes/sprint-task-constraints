@@ -33,7 +33,7 @@ class Epic:
     id: str
     name: str
     priority: Priority
-    total_days: int  # total implementation effort in days
+    total_days: int  # calendar days with required_engineers working
     completion_pct: float = 0.0  # 0.0 - 1.0
     required_engineers: int = 1
     senior_required: bool = False

@@ -42,7 +42,7 @@ def solve(sprint: Sprint) -> SolverResult:
     remaining = {eid: e.remaining_days for eid, e in epics.items()}
     # Half-day units: when an engineer works on 2 epics, each gets 1 half-day.
     # Working on 1 epic = 2 half-days = 1 full day of effort.
-    remaining_half = {eid: r * 2 for eid, r in remaining.items()}
+    remaining_half = {eid: r * epics[eid].required_engineers * 2 for eid, r in remaining.items()}
 
     # --- Variables ---
 
@@ -250,7 +250,8 @@ def solve(sprint: Sprint) -> SolverResult:
                 finish_day = d
                 break
 
-        projected = epic.completion_pct + (eff_days / epic.total_days) if epic.total_days > 0 else 1.0
+        total_effort = epic.total_days * epic.required_engineers
+        projected = epic.completion_pct + (eff_days / total_effort) if total_effort > 0 else 1.0
         projected = min(projected, 1.0)
 
         epic_results.append(EpicResult(
